@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt DIM | Nicol.S</title>
+    <!-- Odkaz na tvůj styl -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (ikony) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts (Sacramento pro logo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- POZADÍ (Stejné jako všude jinde) -->
+    <div class="gradient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- HEADER (Zkopíruj si svůj header, pokud ho máš jinak, toto je standard) -->
+   <header class="header">
+    <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+    
+    <!-- Tlačítko hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Navigace s třídou nav-menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html">O mně</a></li>
+            <li><a href="projects.html" class="active">Mé práce</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <!-- Hlavní kontejner detailu projektu -->
+        <div class="project-detail-container">
+
+            <!-- Nadpis a úvod -->
+            <div class="detail-header">
+                <h1>Cukrárna Bloom</h1>
+                <p class="subtitle">Webová stránka pro cukrárnu Bloom</p>
+                <a href="projects.html" class="back-btn"><i class="fas fa-arrow-left"></i> Zpět na projekty</a>
+            </div>
+
+            <!-- 1. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/uvod.png" alt="DIM Grafický návrh">
+                </div>
+                <div class="detail-text">
+                    <h2>Cukrárna Bloom: Identita a struktura</h2>
+                    <p>
+                        Dalším krokem v mém rozvoji byl komplexnější projekt – webové stránky pro fiktivní cukrárnu
+                        Bloom. Na rozdíl od předchozího projektu se již nejednalo o jednu stránku, ale o ucelený web s
+                        více podstránkami. První fáze byla ryze kreativní a koncepční. Vymyslela jsem název "Bloom" a
+                        navrhla k němu odpovídající logo a barevnou paletu, která má evokovat sladkost a eleganci.
+                        Zároveň jsem musela naplánovat strukturu celého webu – rozhodnout, jaké stránky budou potřeba
+                        (Domů, Nabídka, O nás, Kontakt) a jak bude vypadat jejich vizuální styl.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. BLOK (Obrázek vpravo - prohodí se to samo v CSS) -->
+            <div class="detail-row reverse glass-card">
+                <div class="detail-img">
+                    
+                    <img src="images/kava.jpg" alt="DIM Kódování">
+                </div>
+                <div class="detail-text">
+                    <h2>Vývoj multi-page webu</h2>
+                    <p>
+                        V druhé fázi jsem přešla k samotnému kódování. Hlavní výzvou bylo správně technicky propojit
+                        jednotlivé podstránky pomocí odkazů a vytvořit funkční navigaci, která uživatele intuitivně
+                        provede celým webem. Web jsem naplnila obsahem – vložila jsem lákavé fotografie zákusků a dortů,
+                        které jsou pro prezentaci cukrárny klíčové. Dbala jsem na to, aby byl kód přehledný a aby
+                        vizuální styl (fonty, barvy tlačítek) zůstal konzistentní napříč všemi stránkami webu.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/bloom.png" alt="DIM Finální výsledek">
+                </div>
+                <div class="detail-text">
+                    <h2>Responzivita a finální design</h2>
+                    <p>
+                        Poslední a technicky náročnou fází bylo zajištění responzivity. Musela jsem upravit kód tak, aby
+                        se web zobrazoval správně nejen na počítači, ale především na mobilních telefonech a tabletech,
+                        což je pro gastrosektor zásadní. V rámci finálního ladění jsem se zaměřila na detaily designu –
+                        upravovala jsem odsazení, velikosti písem a interaktivní prvky tak, aby byl zážitek z prohlížení
+                        co nejpříjemnější a web působil profesionálním dojmem.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+         <!-- NOVÝ BLOK: Odkaz na projekt -->
+            <div class="action-row">
+                <p class="action-text">Líbí se vám tento projekt? Podívejte se na výsledek naživo.</p>
+                <!-- Změň 'href' na skutečnou adresu webu -->
+                <a href="weby/pololetni prace- 2/uvod.html" target="_blank" class="live-preview-btn">
+                    <i class="fas fa-external-link-alt"></i> Otevřít web Cukrárna Bloom
+                </a>
+            </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Kliknutí na hamburger otevře/zavře menu
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+</body>
+
+</html>

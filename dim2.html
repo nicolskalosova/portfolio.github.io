@@ -1,0 +1,144 @@
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt DIM | Nicol.S</title>
+    <!-- Odkaz na tvůj styl -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (ikony) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts (Sacramento pro logo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- POZADÍ (Stejné jako všude jinde) -->
+    <div class="gradient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- HEADER (Zkopíruj si svůj header, pokud ho máš jinak, toto je standard) -->
+   <header class="header">
+    <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+    
+    <!-- Tlačítko hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Navigace s třídou nav-menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html">O mně</a></li>
+            <li><a href="projects.html"class="active">Mé práce</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        <!-- Hlavní kontejner detailu projektu -->
+        <div class="project-detail-container">
+
+            <!-- Nadpis a úvod -->
+            <div class="detail-header">
+                <h1>Úprava fotografií</h1>
+                <p class="subtitle">Úprava barev na fotografiích k vytvoření správné atmosféry</p>
+                <a href="projects.html" class="back-btn"><i class="fas fa-arrow-left"></i> Zpět na projekty</a>
+            </div>
+
+            <!-- 1. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/uprava.jpg.jpg" alt="DIM Grafický návrh">
+                </div>
+                <div class="detail-text">
+                    <h2>Color grading - ledová atmosféra</h2>
+                    <p>
+                        V této části projektu jsem se zaměřila na pokročilou úpravu barev. Původní snímek mé kočky na
+                        stromě měl neutrální až teplý nádech, mým cílem však bylo radikálně změnit atmosféru. Pomocí
+                        úpravy teploty barev a tónovacích křivek jsem fotku posunula do chladných, modro-azurových tónů.
+                        Nešlo o přidání sněhu, ale o navození pocitu sychravého, mrazivého rána, kdy je vzduch ostrý a
+                        studený.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. BLOK (Obrázek vpravo - prohodí se to samo v CSS) -->
+            <div class="detail-row reverse glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/pizza.jpg.jpeg" alt="DIM Kódování">
+                </div>
+                <div class="detail-text">
+                    <h2>Color grading - Italské léto</h2>
+                    <p>
+                        Pravý opak předchozí úpravy. U této fotografie, zachycující oběd s výhledem na moře v Itálii,
+                        bylo cílem maximálně podpořit letní a hřejivou atmosféru. Zaměřila jsem se na zvýraznění sytosti
+                        barev (vibrance), aby vynikla modř moře a především barvy pizzy. Zvýšením kontrastu a teploty
+                        jsem docílila toho, že jídlo působí šťavnatě a celá scéna vyzařuje energii slunného odpoledne.
+
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/kocky.jpg.jpeg" alt="DIM Finální výsledek">
+                </div>
+                <div class="detail-text">
+                    <h2>Atmosféra - Italská siesta</h2>
+                    <p>
+                        V duchu předchozí fotografie jsem pokračovala i zde. Snímek dvou koček odpočívajících na zídce
+                        před malým obchůdkem dokonale vystihuje línou atmosféru horkého odpoledne. Při úpravě jsem se
+                        soustředila na sjednocení barevného podání s předchozí fotkou. Vytáhla jsem teplé, zlatavé tóny
+                        betonové zídky a fasády, aby z fotografie sálal klid a teplo letního dne.
+
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Kliknutí na hamburger otevře/zavře menu
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+</body>
+
+</html>

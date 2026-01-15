@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt DIM | Nicol.S</title>
+    <!-- Odkaz na tvůj styl -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (ikony) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts (Sacramento pro logo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- POZADÍ (Stejné jako všude jinde) -->
+    <div class="gradient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- HEADER (Zkopíruj si svůj header, pokud ho máš jinak, toto je standard) -->
+   <header class="header">
+    <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+    
+    <!-- Tlačítko hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Navigace s třídou nav-menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html">O mně</a></li>
+            <li><a href="projects.html" class="active">Mé práce</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <!-- Hlavní kontejner detailu projektu -->
+        <div class="project-detail-container">
+
+            <!-- Nadpis a úvod -->
+            <div class="detail-header">
+                <h1>Make-up lookbook</h1>
+                <p class="subtitle">Focení a vytváření make-up looků pro lookbook.</p>
+                <a href="projects.html" class="back-btn"><i class="fas fa-arrow-left"></i> Zpět na projekty</a>
+            </div>
+
+            <!-- 1. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+
+                    <img src="images/inspo1.jpg.jpg" alt="Inspirace">
+                </div>
+                <div class="detail-text">
+                    <h2>Inspirace pro začátek</h2>
+                    <p>
+                        Každý úspěšný projekt začíná důkladnou přípravou. Ještě předtím, než jsem vzala do ruky štětce
+                        na líčení nebo fotoaparát, jsem věnovala čas hledání správného vizuálního směru. Cílem bylo
+                        definovat atmosféru, kterou má výsledný lookbook vyzařovat.
+
+                        Procházela jsem pinterest, abych načerpala
+                        inspiraci pro barevné kombinace a techniky stínování. Zaměřila jsem se na hledání referenčních
+                        fotografií, které pracovaly se zajímavým světlem a kompozicí detailu oka. Fotografie jsem si
+                        uložila a použila jsem je k inspiraci pro mé vlastní líčení. Tato fáze byla klíčová pro ujasnění
+                        si, jak chci aby líčení vypadala.
+
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. BLOK (Obrázek vpravo - prohodí se to samo v CSS) -->
+            <div class="detail-row reverse glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/inspo2.jpg.jpg" alt="DIM Kódování">
+                </div>
+                <div class="detail-text">
+                    <h2>Naše looky</h2>
+                    <p>
+                        Zde se koncept proměnil v realitu. Na modelce Marianně a i na sobě samé jsem postupně vytvořila
+                        sérii
+                        make-up looků, které vycházely z naší předchozí inspirace. Důraz jsem kladla na
+                        precizní zapracování stínů a barevné přechody. Bezprostředně po každém líčení následovalo
+                        focení, jehož cílem bylo věrně zachytit texturu produktů a detaily očí v tom nejlepším světle.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/inspo3.jpg.png" alt="DIM Finální výsledek">
+                </div>
+                <div class="detail-text">
+                    <h2>Finální výsledek - samotný lookbook</h2>
+                    <p>
+                        Posledním krokem bylo spojit všechny prvky do jednoho celku. Vybrala jsem nejlepší záběry z
+                        focení a provedla nezbytnou postprodukci a retuš, aby barvy působily co nejvěrněji. Následně
+                        jsem se věnovala samotné sazbě lookbooku. Hrála jsem si s kompozicí, bílým prostorem a
+                        typografií tak, aby vznikl čistý a moderní design, který neodvádí pozornost, ale naopak nechává
+                        plně vyniknout krásu a detail samotného líčení.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Kliknutí na hamburger otevře/zavře menu
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+</body>
+
+</html>

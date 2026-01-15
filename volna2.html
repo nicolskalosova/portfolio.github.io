@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt DIM | Nicol.S</title>
+    <!-- Odkaz na tvůj styl -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (ikony) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts (Sacramento pro logo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- POZADÍ (Stejné jako všude jinde) -->
+    <div class="gradient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- HEADER (Zkopíruj si svůj header, pokud ho máš jinak, toto je standard) -->
+   <header class="header">
+    <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+    
+    <!-- Tlačítko hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Navigace s třídou nav-menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html">O mně</a></li>
+            <li><a href="projects.html" class="active">Mé práce</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <!-- Hlavní kontejner detailu projektu -->
+        <div class="project-detail-container">
+
+            <!-- Nadpis a úvod -->
+            <div class="detail-header">
+                <h1>Make-up</h1>
+                <p class="subtitle">Mnou vytvořené make-up looky.</p>
+                <a href="projects.html" class="back-btn"><i class="fas fa-arrow-left"></i> Zpět na projekty</a>
+            </div>
+
+            <!-- 1. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+
+                    <img src="images/bila.jpg.jpg" alt="Inspirace">
+                </div>
+                <div class="detail-text">
+                    <h2>Technika definovaných spodních řas</h2>
+                    <p>
+                        Cílem tohoto líčení bylo opticky co nejvíce zvětšit oči při zachování klasického základu. Klíčem
+                        k úspěchu zde byla precizní práce se spodními řasami. Po nanesení řasenky jsem je ještě za mokra
+                        pomocí pinzety spojovala k sobě do jednotlivých hrotů neboli trsů. Tento grafický prvek jsem
+                        doplnila bílou tužkou na vnitřní vodní lince, která oko "vyčistí" a opticky zvětší bělmo. Je to
+                        důkaz, jak malá změna v technice dokáže zcela proměnit výraz tváře.
+
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. BLOK (Obrázek vpravo - prohodí se to samo v CSS) -->
+            <div class="detail-row reverse glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/koutek.jpg.jpg" alt="DIM Kódování">
+                </div>
+                <div class="detail-text">
+                    <h2>Bílý akcent a stínování</h2>
+                    <p>
+                        Vycházela jsem z jednoduchého, přirozeného líčení, které jsem chtěla oživit výrazným kontrastem.
+                        Do vnitřního koutku jsem nanesla vysoce pigmentovaný bílý stín a rozblendovala ho dvěma směry –
+                        nahoru na víčko do ztracena a dolů pod vnitřní koutek. Tímto tahem se vytvořil plynulý světelný
+                        přechod, který oko krásně tvaruje. Bílá barva zde funguje jako "reflektor", který přitahuje
+                        pozornost a čistí pohled.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/zara.jpg.jpeg" alt="DIM Finální výsledek">
+                </div>
+                <div class="detail-text">
+                    <h2>Vibe Zary Larsson: Popová hravost</h2>
+                    <p>
+                        Tento look je mou poctou odvážnému stylu zpěvačky Zary Larsson. Chtěla jsem vytvořit něco
+                        zábavného, mladistvého a nepřehlédnutelného. Na víčkách jsem propojila jemnost bílého a růžového
+                        stínu, což vytvořilo sladký základ pro výrazný kontrast – světle modrou linku, která celému
+                        líčení dodává "elektrický" náboj. Aby byl look kompletní, nebála jsem se sáhnout po výrazné
+                        tvářence a finální tečku tomu dodaly nalepené kamínky, které odrážejí světlo a posouvají make-up
+                        do sféry jevištního umění.
+
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Kliknutí na hamburger otevře/zavře menu
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+</body>
+
+</html>

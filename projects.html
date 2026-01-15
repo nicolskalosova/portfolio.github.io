@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mé práce - Nicol Skalošová</title>
+    <!-- Načtení ikonek -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NOVÉ POZADÍ (Vložit hned za <body>) -->
+    <div class="gradient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <header class="header">
+    <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+    
+    <!-- Tlačítko hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Navigace s třídou nav-menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html">O mně</a></li>
+            <li><a href="projects.html" class="active">Mé práce</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+    <main class="container">
+        <h1>Mé práce</h1>
+
+        <!-- HORNÍ ČÁST: 3 Navigační bloky (Obdélníky na výšku) -->
+        <div class="projects-nav">
+
+            <!-- 1. Blok: Digitální média (vlevo) -->
+            <div class="nav-block">
+                <!-- Ikonka fotoaparátu jako tlačítko -->
+                <a href="#digital" class="nav-icon-btn">
+                    <i class="fas fa-camera"></i>
+                </a>
+                <h3>Digitální média</h3>
+                <p>Vytvoření lookbooku pro make-up looky očních stínů, úprava barev na fotografiích a postup
+                    tvorby mé značky Ncsometics </p>
+            </div>
+
+            <!-- 2. Blok: Web a Programování (uprostřed) -->
+            <div class="nav-block">
+                <!-- Ikonka notebooku -->
+                <a href="#web" class="nav-icon-btn">
+                    <i class="fas fa-laptop-code"></i>
+                </a>
+                <h3>Web & Programování</h3>
+                <p>Tvorba webových stránek - Hotel Aurelia, programování interaktivní hry a webová stránka pro Cukrárnu
+                    Bloom.</p>
+            </div>
+
+            <!-- 3. Blok: Volná tvorba (vpravo) -->
+            <div class="nav-block">
+                <!-- Ikonka palety -->
+                <a href="#creative" class="nav-icon-btn">
+                    <i class="fas fa-palette"></i>
+                </a>
+                <h3>Volná tvorba</h3>
+                <p>Barevné kreslení podle předlohy, make-up looky jak každodení, tak i extravagantnější, diamantové
+                    malování </p>
+            </div>
+
+        </div>
+
+        <!-- DOLNÍ ČÁST: Detailní sekce projektů -->
+
+        <!-- Sekce 1: Digitální média -->
+        <section id="digital" class="full-width-section">
+            <h2 class="section-header">Digitální média</h2>
+            <div class="projects-row">
+                <!-- Projekt 1 -->
+                <!-- Celá kartička je nyní odkaz -->
+                <a href="dim.html" class="project-item clickable-card">
+                    <div class="project-thumb">
+                        <img src="images/lookbook.png" alt="Projekt">
+                    </div>
+                    <h4>Pololetní práce - lookbook make-upu</h4>
+                    <p>Pololetní práce z prvního ročníku střední školy, kde naším úkolem bylo vytvořit něco nám blízké.
+                        Vybrala jsem si proto spojení makeu-upu a grafiky a spojila jsem to do lookbooku, aby měl každý
+                        možnost si vybrat look právě pro něj.</p>
+                </a>
+                <!-- Projekt 2 -->
+                <!-- Celá kartička je nyní odkaz -->
+                <a href="dim2.html" class="project-item clickable-card">
+                    <div class="project-thumb">
+                        <img src="images/uprava.jpg.jpg" alt="Projekt">
+                    </div>
+                    <h4>Úprava fotografií</h4>
+                    <p>Ráda se věnuji upravování barev na fotografiích, protože jim dodá veselejší vzhled a barvy na
+                        fotce proniknou. proto jsem si vybrala pár fotek, kde jsem barvy upravila, aby fotky vypadaly
+                        veseljší a plné života.</p>
+                </a>
+                <!-- Projekt 3 -->
+                <!-- Celá kartička je nyní odkaz -->
+                <a href="dim3.html" class="project-item clickable-card">
+                    <div class="project-thumb">
+                        <img src="images/billboard.png" alt="Projekt">
+                    </div>
+                    <h4>Vlastní značka Ncosmetics</h4>
+                    <p>Ve druhém ročníku jsme měli za úkol vymyslet si svou vlastní zančku. Jelikož se ráda věnuji
+                        make-upu, vytvořila jsem značku Ncosmetics a k ní jsem vytvořila vše, co značka potřebuje -
+                        logo, vizitku, návrh webu a další.</p>
+                </a>
+        </section>
+        <section id="web" class="full-width-section">
+            <h2 class="section-header">Webové stránky/Programování</h2>
+            <div class="projects-row">
+                <!-- Projekt 1 -->
+                <!-- Celá kartička je nyní odkaz -->
+                <a href="www.html" class="project-item clickable-card">
+                    <div class="project-thumb">
+                        <img src="images/labut.jpg" alt="Projekt">
+                    </div>
+                    <h4>Hotel Aurelia</h4>
+                    <p>Webová singlepage stránka pro pražský hotel Aurelia. Hotel jsem se rozhodla zasadit do Prahy k
+                        řece Vltavě, která hotelu dodává pravou romantickou atmosféru. Web je lazen do modré barvy,
+                        která má připomínat luxus u řeky.</p>
+                </a>
+                <!-- Projekt 2 -->
+                <!-- Celá kartička je nyní odkaz -->
+                <a href="www2.html" class="project-item clickable-card">
+                    <div class="project-thumb">
+                        <img src="images/les.jpg" alt="Projekt">
+                    </div>
+                    <h4>Interaktivní hra - Dobrodružství v šíleném lese</h4>
+                    <p>Jednoduchá interaktivní hra pro jakéhokoliv uživatele. Uživatel svými rozhodnutími rozhoduje o
+                        chodu hry a je pouze na jeho rozhodnutích, jak hra skončí.</p>
+                </a>
+                <!-- Projekt 3 -->
+                <!-- Celá kartička je nyní odkaz -->
+                <a href="www3.html" class="project-item clickable-card">
+                    <div class="project-thumb">
+                        <img src="images/bloom.png" alt="Projekt">
+                    </div>
+                    <h4>Cukrárna Bloom</h4>
+                    <p>Vícestránkový web pro cukrárnu Bloom. S nabídkou několika zákusků, nápojů a lahodné kávy. Lidé
+                        mají možnost objednat si na zakázku třeba na narozeninovou oslavu.</p>
+                </a>
+        </section>
+
+        <section id="creative" class="full-width-section">
+            <h2 class="section-header">Volná tvorba</h2>
+            <div class="projects-row">
+                <!-- Projekt 1 -->
+                <!-- Celá kartička je nyní odkaz -->
+                <a href="volna.html" class="project-item clickable-card">
+                    <div class="project-thumb">
+                        <img src="images/malovani.jpg" alt="Projekt">
+                    </div>
+                    <h4>Barevné kreslení a malování</h4>
+                    <p>Kreativita mě provází nejen u počítače, ale i ve volném čase. Kreslení a malování jsou pro mě
+                        skvělým způsobem, jak relaxovat a rozvíjet svou fantazii mimo digitální svět. Ráda experimentuji
+                        s barvami a různými technikami. Zde si můžete prohlédnout malou ukázku mé tvorby..</p>
+                </a>
+                <!-- Projekt 2 -->
+                <!-- Celá kartička je nyní odkaz -->
+                <a href="volna2.html" class="project-item clickable-card">
+                    <div class="project-thumb">
+                        <img src="images/prvni.jpg.jpg" alt="Projekt">
+                    </div>
+                    <h4>Make-up</h4>
+                    <p>Líčení mě baví svou rozmanitostí. Někdy preferuji jednoduchý a svěží vzhled do školy nebo do
+                        práce, jindy se ale nebojím popustit uzdu fantazii a vytvořit něco výrazného a netradičního. Zde
+                        je malá ukázka toho, co mě baví tvořit, když mám štětce v ruce.</p>
+                </a>
+                <!-- Projekt 3 -->
+                <!-- Celá kartička je nyní odkaz -->
+                <a href="volna3.html" class="project-item clickable-card">
+                    <div class="project-thumb">
+                        <img src="images/titulka.jpg.jpeg" alt="Projekt">
+                    </div>
+                    <h4>Diamantové malování</h4>
+                    <p>Objevila jsem kouzlo diamantového malování a naprosto jsem mu propadla. Trávím u něj spoustu
+                        volného času, protože mě baví sledovat, jak pod mýma rukama vznikají barevná a lesklá díla.
+                        Podívejte se na ukázky obrazů, které mi v poslední době dělají radost.</p>
+                </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Kliknutí na hamburger otevře/zavře menu
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+</body>
+
+</html>

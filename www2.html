@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt DIM | Nicol.S</title>
+    <!-- Odkaz na tvůj styl -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (ikony) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts (Sacramento pro logo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- POZADÍ (Stejné jako všude jinde) -->
+    <div class="gradient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- HEADER (Zkopíruj si svůj header, pokud ho máš jinak, toto je standard) -->
+   <header class="header">
+    <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+    
+    <!-- Tlačítko hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Navigace s třídou nav-menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html">O mně</a></li>
+            <li><a href="projects.html" class="active">Mé práce</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <!-- Hlavní kontejner detailu projektu -->
+        <div class="project-detail-container">
+
+            <!-- Nadpis a úvod -->
+            <div class="detail-header">
+                <h1>Interaktivní hra - Dobrodružství v šíleném lese</h1>
+                <p class="subtitle">Interaktivní hra, kde vaše rozhodnutí ovlivňuje děj</p>
+                <a href="projects.html" class="back-btn"><i class="fas fa-arrow-left"></i> Zpět na projekty</a>
+            </div>
+
+            <!-- 1. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/zacatek.png" alt="DIM Grafický návrh">
+                </div>
+                <div class="detail-text">
+                    <h2>Interaktivní hra: Scénář a logika</h2>
+                    <p>
+                        Dalším projektem v rámci programování byla tvorba interaktivní textové hry. Cílem bylo vytvořit
+                        zážitek, kde uživatel svými rozhodnutími přímo ovlivňuje děj a finální vyústění příběhu. První
+                        fáze se vůbec netýkala kódu, ale čistého "game designu". Musela jsem vymyslet poutavou zápletku
+                        a především narysovat logickou strukturu celého vyprávění. Definovala jsem klíčové body
+                        rozhodování, různé dějové linky a několik odlišných konců, ke kterým se hráč může dopracovat.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. BLOK (Obrázek vpravo - prohodí se to samo v CSS) -->
+            <div class="detail-row reverse glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/desive.jpg" alt="DIM Kódování">
+                </div>
+                <div class="detail-text">
+                    <h2>Implementace a vizuální atmosféra</h2>
+                    <p>
+                        Po dokončení scénáře jsem přešla k technické realizaci. Bylo nutné nakódovat jednotlivé herní
+                        sekce (obrazovky) a zajistit, aby tlačítka pro rozhodování správně přepínala mezi dějovými
+                        linkami podle logiky navržené v první fázi. Aby hra nebyla pouze "suchý" text, obohatila jsem ji
+                        o ilustrační obrázky ke každé scéně. Tyto vizuály hrají klíčovou roli – pomáhají dokreslit
+                        atmosféru a umožňují hráči si situaci a prostředí mnohem lépe představit.
+
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/poklad.png" alt="DIM Finální výsledek">
+                </div>
+                <div class="detail-text">
+                    <h2>Fáze 3: Uživatelské testování</h2>
+                    <p>
+                        Žádný software není hotový bez pořádného testu. Finální fází projektu bylo představení hry "v
+                        ostrém provozu". Hru si zahrál můj učitel i spolužáci, což sloužilo jako skvělý zátěžový test
+                        pro mou naprogramovanou logiku. Bylo fascinující sledovat, jak odlišně lidé přemýšlejí – díky
+                        variabilitě rozhodování se téměř každý tester dopracoval k jinému konci. To potvrdilo, že
+                        větvení příběhu funguje správně a hra nabízí unikátní zážitek pro každého hráče.
+
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+          <!-- NOVÝ BLOK: Odkaz na projekt -->
+            <div class="action-row">
+                <p class="action-text">Líbí se vám tento projekt? Podívejte se na výsledek naživo.</p>
+                <!-- Změň 'href' na skutečnou adresu webu -->
+                <a href="weby/hra/hra.html" target="_blank" class="live-preview-btn">
+                    <i class="fas fa-external-link-alt"></i> Otevřít Dobrodržství v šíleném lese
+                </a>
+            </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Kliknutí na hamburger otevře/zavře menu
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mně - Nicol Skalošová</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NOVÉ POZADÍ (Vložit hned za <body>) -->
+<div class="gradient-background">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+</div>
+
+    <header class="header">
+    <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+    
+    <!-- Tlačítko hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Navigace s třídou nav-menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html" class="active">O mně</a></li>
+            <li><a href="projects.html">Mé práce</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <!-- Nízký fialový pruh -->
+        <div class="about-banner">
+            <!-- Fotka, která je větší než pruh a je vycentrovaná absolutně -->
+            <div class="profile-circle">
+                <img src="images/profi2.jpg" alt="Nicol Skalošová">
+            </div>
+        </div>
+
+        <!-- Textová část s odstupem shora -->
+        <div class="about-text-centered">
+            <h1>O mně</h1>
+
+            <p>Jmenuji se Nicol Skalošová a jsem studentkou na Střední škole automobilní, informatiky a gymnáziu. Už od
+                dětství mě fascinovalo propojování logiky s estetikou, což mě přirozeně přivedlo do světa digitálních
+                technologií. Studium informačních technologií mi dává pevný technický základ, díky kterému rozumím tomu,
+                jak věci fungují, ať už jde o kódování webových stránek, správu systémů nebo práci s
+                digitálními médii.
+
+                Můj svět ale nekončí jen u obrazovky počítače. Jsem kreativní a svou fantazii ráda ventiluji i v
+                offline světě. Ve volném čase se naplno věnuji makeup artistice a líčení. Je to pro mě forma umění, kde
+                je plátnem lidská tvář a štětce mými nástroji. Tato záliba mě naučila citu pro barvy, stínování a
+                detail, což jsou dovednosti, které překvapivě často využívám i při navrhování designu webů nebo grafiky.
+                Stejně tak mě naplňuje kreslení, které mi pomáhá tříbit vizuální představivost.
+
+               
+                .</p>
+            <br>
+            <p> Věřím, že v dnešní době je klíčová všestrannost. Kombinace technického myšlení ze školy a uměleckého
+                cítění z mých koníčků mi umožňuje dívat se na projekty z jiné perspektivy. Nedělám jen věci, které
+                fungují, ale snažím se, aby i skvěle vypadaly. Mým cílem do budoucna je tyto dva světy dále propojovat a
+                neustále se zdokonalovat, ať už se jedná o učení nových programovacích jazyků, nebo objevování nových
+                trendů v designu.
+</p>
+
+            <a href="contact.html" class="btn">Napište mi</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Kliknutí na hamburger otevře/zavře menu
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+</body>
+
+</html>

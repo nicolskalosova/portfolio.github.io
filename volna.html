@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt DIM | Nicol.S</title>
+    <!-- Odkaz na tvůj styl -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (ikony) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts (Sacramento pro logo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- POZADÍ (Stejné jako všude jinde) -->
+    <div class="gradient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- HEADER (Zkopíruj si svůj header, pokud ho máš jinak, toto je standard) -->
+    <header class="header">
+    <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+    
+    <!-- Tlačítko hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Navigace s třídou nav-menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html">O mně</a></li>
+            <li><a href="projects.html" class="active">Mé práce</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <!-- Hlavní kontejner detailu projektu -->
+        <div class="project-detail-container">
+
+            <!-- Nadpis a úvod -->
+            <div class="detail-header">
+                <h1>Barevné kreslení a malování</h1>
+                <p class="subtitle">Mé obrázky kreslené převážně vodovými barvami.</p>
+                <a href="projects.html" class="back-btn"><i class="fas fa-arrow-left"></i> Zpět na projekty</a>
+            </div>
+
+            <!-- 1. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+
+                    <img src="images/houba.jpg.jpg" alt="Inspirace">
+                </div>
+                <div class="detail-text">
+                    <h2>Magická houba</h2>
+                    <p>
+                        Tato malba pro mě představuje únik do světa fantazie, kde neplatí pravidla reality, ale pouze
+                        zákonitosti barev a světla. Ústředním motivem je magická houba, kterou jsem záměrně stylizovala
+                        do sytých, až mystických tónů s dominancí fialové barvy. Chtěla jsem, aby obraz působil jako
+                        okno do pohádkového lesa. Nejvíce času jsem věnovala propracování drobných detailů a textury na
+                        klobouku houby, kde se střídají světlejší odlesky s temnými stíny. Právě toto pečlivé stínování
+                        dodává malbě hloubku a plasticitu, takže houba vystupuje z plochy a září vlastní, vnitřní
+                        energií. Je to pro mě ukázka toho, jak lze pomocí barev vyprávět tichý, ale pestrý příběh.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. BLOK (Obrázek vpravo - prohodí se to samo v CSS) -->
+            <div class="detail-row reverse glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/drak.jpg.jpg" alt="DIM Kódování">
+                </div>
+                <div class="detail-text">
+                    <h2>Drak na muchomůrce: Hra s texturami</h2>
+                    <p>
+                        Představila jsem si draka, který je tak trpělivý a tichý, že se stal součástí lesa. Tento malý
+                        společník trůní na muchomůrce a splývá se svým okolím. Unikátní "zahrádka" na zádech, mech a
+                        drobné houbičky
+                        rostoucí přímo na jeho těle jsou mým oblíbeným detailem. Ukazují, že magie a příroda k sobě
+                        neodmyslitelně patří. Malování těchto drobných prvků vyžadovalo pevnou ruku, ale výsledek stojí
+                        za to. Obrázek má působit milým a trochu tajemným dojmem, jako byste tohoto tvora mohli potkat
+                        při procházce hlubokým lesem.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/narcis.jpg.jpg" alt="DIM Finální výsledek">
+                </div>
+                <div class="detail-text">
+                    <h2>Botanický minimalismus</h2>
+                    <p>
+                        Tento obrázek je důkazem toho, že není potřeba přeplněné plátno, aby vzniklo něco pěkného.
+                        Vydala jsem se cestou minimalismu a vytvořila detailní studii samotného narcisu. Žádné rušivé
+                        elementy, jen čistá příroda. Modré pozadí zde funguje jako klidná obloha nebo vodní hladina,
+                        která dává prostoru vyniknout struktuře a jasné barvě květiny. Je to pro mě odpočinková malba,
+                        kde jsem se snažila věrně zachytit anatomii rostliny a její přirozený půvab bez zbytečných
+                        příkras.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- 4. BLOK: GALERIE VOLNÉ TVORBY -->
+    <div class="gallery-container">
+        <h2>Detailnější pohled na mé malby</h2>
+        <p><b>Kliknutím na obrázek jej zvětšíte.</b></p>
+
+        <div class="gallery-grid">
+            <!-- ZDE SI ZMĚŇ CESTY K OBRÁZKŮM -->
+            <img src="images/houba.jpg.jpg" alt="Kresba 1" class="gallery-img">
+            <img src="images/drak.jpg.jpg" alt="Malba 1" class="gallery-img">
+            <img src="images/narcis.jpg.jpg" alt="Makeup 1" class="gallery-img">
+          
+            
+        </div>
+    </div>
+    <div class="gallery-container">
+        <h2>Další malby k nahlédnutí</h2>
+        <p><b>Kliknutím na obrázek jej zvětšíte.</b></p>
+
+        <div class="gallery-grid">
+            <!-- ZDE SI ZMĚŇ CESTY K OBRÁZKŮM -->
+            <img src="images/kravata.jpg.jpeg" alt="Kresba 1" class="gallery-img">
+            <img src="images/vila.jpg.jpeg" alt="Malba 1" class="gallery-img">
+            <img src="images/oranzova.jpg.jpeg" alt="Makeup 1" class="gallery-img">
+            <img src="images/cigo.jpg.jpeg" alt="Kresba 1" class="gallery-img">
+            <img src="images/modra.jpg.jpeg" alt="Makeup 1" class="gallery-img">
+            
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<!-- MODAL (Neviditelné okno pro zvětšení) -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
+
+<!-- SKRIPT PRO FUNKČNOST -->
+<script>
+    // Získáme modal
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+
+    // Najdeme všechny obrázky s třídou .gallery-img
+    var images = document.querySelectorAll(".gallery-img");
+
+    // Každému obrázku přidáme funkci na kliknutí
+    images.forEach(function (img) {
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src; // Do velkého okna zkopírujeme src obrázku
+        }
+    });
+
+    // Zavírání křížkem
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // Zavírání kliknutím vedle obrázku (do černého)
+    modal.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Kliknutí na hamburger otevře/zavře menu
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+
+</html>

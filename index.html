@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nicol Skalošová</title>
+    <!-- Načtení ikonek (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Přidat tento řádek do <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "v1s2rvkzl9");
+</script>
+</head>
+
+<body>
+    <!-- NOVÉ POZADÍ (Vložit hned za <body>) -->
+    <div class="gradient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+  <header class="header">
+    <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+    
+    <!-- Tlačítko hamburger -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- Navigace s třídou nav-menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html" class="active">Domů</a></li>
+            <li><a href="about.html">O mně</a></li>
+            <li><a href="projects.html">Mé práce</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+    <main class="home-container">
+        <!-- Levá část: Text a ikonky -->
+        <div class="home-content">
+            <h1>Vítejte v mém světě</h1>
+            <p>Jsem Nicol, studentka informačních technologií s vášní pro design, makeup a kreativní tvorbu. Propojuji
+                technický svět s tím uměleckým.</p>
+
+            <!-- Ikonky sociálních sítí -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/n.skalosova/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/nicol.skalosova" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@ffilaa.a" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+
+            <!-- Tlačítko -->
+            <a href="about.html" class="btn">Zjistit více</a>
+        </div>
+
+        <!-- Pravá část: Kruhová fotka -->
+        <div class="home-image">
+            <div class="img-circle-large">
+                <!-- Zde vlož svou fotku -->
+                <img src="images/profi.jpg.jpeg" alt="Nicol Skalošová">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+
+</body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Kliknutí na hamburger otevře/zavře menu
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+
+</html>

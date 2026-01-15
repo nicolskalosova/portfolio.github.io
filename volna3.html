@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt DIM | Nicol.S</title>
+    <!-- Odkaz na tvůj styl -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (ikony) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts (Sacramento pro logo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- POZADÍ (Stejné jako všude jinde) -->
+    <div class="gradient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- HEADER (Zkopíruj si svůj header, pokud ho máš jinak, toto je standard) -->
+    <header class="header">
+        <a href="index.html" class="logo-stylish">Nicol Skalošová</a>
+
+        <!-- Tlačítko hamburger -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Navigace s třídou nav-menu -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="about.html">O mně</a></li>
+                <li><a href="projects.html" class="active">Mé práce</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Hlavní kontejner detailu projektu -->
+        <div class="project-detail-container">
+
+            <!-- Nadpis a úvod -->
+            <div class="detail-header">
+                <h1>Diamantové malování</h1>
+                <p class="subtitle">Focení a vytváření make-up looků pro lookbook.</p>
+                <a href="projects.html" class="back-btn"><i class="fas fa-arrow-left"></i> Zpět na projekty</a>
+            </div>
+
+            <!-- 1. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+
+                    <img src="images/kaminky.jpg.jpeg" alt="Inspirace">
+                </div>
+                <div class="detail-text">
+                    <h2>Elegance v tlumených tónech</h2>
+                    <p>
+                        Tento obraz dvou koček je pro mě důkazem, že krása nemusí vždy křičet barvami. Paleta je zde
+                        velmi jemná a přirozená, což dává vyniknout samotnému motivu a klidné atmosféře. Pracovala jsem
+                        s kulatými diamanty, které obrazu dodávají specifický, měkčí lesk a hezky podtrhují tvary
+                        kočičích těl. Výsledek působí velmi realisticky a harmonicky, jako tichá momentka ze života.
+
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. BLOK (Obrázek vpravo - prohodí se to samo v CSS) -->
+            <div class="detail-row reverse glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/chata.jpg.jpg" alt="DIM Kódování">
+                </div>
+                <div class="detail-text">
+                    <h2>Chata u vody (Diamond Art Club)</h2>
+                    <p>
+                        Prémiová mozaika: Chata u vody (Diamond Art Club)
+                        Práce na plátně od Diamond Art Club je vždy zážitek a tento obraz není výjimkou. Jedná se o
+                        velmi pestrý motiv chaty u rybníka, který hýří všemi barvami. Specifikem tohoto díla jsou
+                        čtvercové diamanty – ty vyžadují větší přesnost při umisťování, ale odměnou je dokonale hladká
+                        plocha bez mezer, která vypadá jako skutečná mozaika. Díky kvalitnímu zpracování kamínků
+                        vyniknou i ty nejmenší barevné detaily odrazů ve vodě.le.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. BLOK (Obrázek vlevo) -->
+            <div class="detail-row glass-card">
+                <div class="detail-img">
+                    <!-- Změň 'src' na tvou fotku -->
+                    <img src="images/maledivy.jpg.jpeg" alt="DIM Finální výsledek">
+                </div>
+                <div class="detail-text">
+                    <h2>Exotika na plátně</h2>
+                    <p>
+                        Pokud milujete barvy, tohle je ten pravý projekt. Nádherná scenerie připomínající ráj na
+                        Maledivách. Kombinace modré vody, pestrobarevných ryb, květin a výrazných papoušků dělá z tohoto
+                        obrazu skutečnou dominantu místnosti. Díky prémiovému zpracování od Diamond Art Clubu se obraz
+                        krásně třpytí a barvy působí neuvěřitelně hluboce. Skládat tento kousek byla čistá radost a
+                        vizuální zážitek.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="gallery-container">
+    <h2>Jak funguje diamantové malování?</h2>
+    <p class="video-subtitle"><b>Kliknutím na video se dozvíte více</b></p>
+
+    <!-- Obal pro video s efektem -->
+    <div class="video-frame-container">
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Skgtwd3aKEg?si=UFm-9dGEfc0Dxr_n"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <!-- Ozdobné prvky (diamantíky/odlesky) v rozích -->
+        <div class="decoration-corner top-left"></div>
+        <div class="decoration-corner bottom-right"></div>
+    </div>
+</div>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nicol Skalošová. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        // Kliknutí na hamburger otevře/zavře menu
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Kliknutí na odkaz v menu ho zavře (aby nezůstalo viset přes obrazovku)
+        document.querySelectorAll(".nav-menu a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
